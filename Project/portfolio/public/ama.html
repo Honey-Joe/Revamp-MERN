@@ -12,6 +12,10 @@
     <!-- Production version -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./Fonts/WEB/css/satoshi.css">
+    <!--FireBase SDK-->
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -70,8 +74,25 @@
             <!-- mobile nav ending  -->
         </section>
         <!-- navigation ending  -->
+        <!-- form starting  -->
+        <div class="w-[90%] md:w-[60%] grid grid-cols-1 mx-auto">
+            <form action="" class="flex flex-col" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" class="border" id="name">
+                <p id="error-name"></p>
+                <label for="">Email address</label>
+                <input type="" class="border" id="email">
+                <p id="error-email"></p>
+                <label for="">Enter message</label>
+                <textarea name="" id="error-msg" rows="2" cols="13" class="border" itemid="msg"></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+
+        </div>
+        <!-- form ending  -->
     </div>
 
+    <script src="./index.js"></script>
 </body>
 
 </html>
