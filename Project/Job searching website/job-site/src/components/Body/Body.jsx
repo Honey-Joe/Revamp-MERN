@@ -6,9 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 const Body = () => {
     return (
       <>
-        <p>search</p>
         <div className="2xl:container mx-auto">
-          <div className="w-[60%] mx-auto grid grid-cols-1 md:grid-cols-1 gap-4">
+          <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
             {DummyData.map((e) => {
               return (
                 <>

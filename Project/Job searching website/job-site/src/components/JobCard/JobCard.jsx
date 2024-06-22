@@ -1,5 +1,6 @@
 import DummyData from "../API/DummyData";
 import { Banknote, Calendar } from "lucide-react";
+
 const JobCard = (props) => {
   return (
     <>
